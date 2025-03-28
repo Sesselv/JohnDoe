@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>John Doe Photography</title>
+    <meta name="description"
+        content="Découvrez le portfolio de John Doe, photographe professionnel spécialisé en nature, événements et portraits. Des images uniques pour capturer vos plus beaux moments.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/codePort2/style.css">
+    <script src="/codePort2/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">John Doe</a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="/docHtml/index.html">Home</a></li>
+                    <li><a href="../docHtml/services.html">Services</a></li>
+                    <li><a href="../docHtml/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <img src="../img/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="services">
+            <h2>Services</h2>
+            <p>John Doe propose une gamme de services :</p>
+            <ul>
+                <li>Photographie de la nature</li>
+                <li>Photographie d'événements</li>
+                <li>Portraits</li>
+                <li>Retouche photo</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 John Doe Photography</p>
+    </footer>
+</body>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-menu')
+    })
+
+</script>
+
+</html>
