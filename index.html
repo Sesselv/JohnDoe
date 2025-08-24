@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>John Doe Photography</title>
+    <meta
+      name="description"
+      content="Découvrez le portfolio de John Doe, photographe professionnel spécialisé en nature, événements et portraits. Des images uniques pour capturer vos plus beaux moments."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="public/js/script.js" defer></script>
+  </head>
+
+  <body>
+    <div id="loader">
+      <p>Loading..</p>
+      <div class="progress-container">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+    <header class="section">
+      <div class="container">
+        <nav class="navbar">
+          <div class="nav-links">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <img
+            src="public/img/menu-btn.png"
+            alt="menu hamburger"
+            class="menu-hamburger"
+          />
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="sec-about" id="home">
+        <div class="container">
+          <div class="part-1">
+            <h2>À propos</h2>
+            <p>
+              Je suis John Doe, photographe passionné basé à Paris. Depuis plus
+              de 10 ans, je capture la beauté de la nature, des événements
+              marquants et des portraits uniques. Mon objectif est de
+              transformer chaque instant en un souvenir intemporel.
+            </p>
+          </div>
+          <div class="part-2">
+            <img
+              src="public/img/john-Photo.png"
+              alt="Portrait de John Doe"
+              class="about-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="sec-slider">
+        <div class="container">
+          <div class="slider">
+            <p class="texte">
+              "Découvrez le portfolio de John Doe, photographe professionnel
+              spécialisé en nature,<br />
+              événements et portraits. Des images uniques pour capturer vos plus
+              beaux moments."
+            </p>
+            <div class="slide active">
+              <img src="public/img/palmiers.svg" alt="Palmiers" />
+            </div>
+            <div class="slide">
+              <img src="public/img/mer.svg" alt="Mer" />
+            </div>
+            <div class="slide">
+              <img src="public/img/parrot.svg" alt="Perroquet" />
+            </div>
+            <div class="slide">
+              <img src="public/img/rochers.svg" alt="Rochers" />
+            </div>
+          </div>
+          <div class="controls">
+            <button id="prev" class="btn">
+              <img src="public/img/icons/fleche2.svg" alt="prev fleche" />
+            </button>
+            <button id="next" class="btn">
+              <img src="public/img/icons/fleche.svg" alt="next fleche" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec-services" id="services">
+        <div class="container">
+          <h2>Services</h2>
+          <p><strong>John Doe propose une gamme de services :</strong></p>
+          <ul>
+            <li>
+              <img src="/public/img/icons/2.svg" alt="" /><br />Photographie de
+              la nature
+            </li>
+            <li><img src="/public/img/icons/1.svg" alt="" /><br />Portraits</li>
+            <li>
+              <img src="/public/img/icons/4.svg" alt="" /><br />Photographie
+              d'événements
+            </li>
+
+            <li>
+              <img src="/public/img/icons/3.svg" alt="" /><br />Retouche photo
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="sec-contact" id="contact">
+        <div class="container">
+          <div class="part-1">
+            <h2>Prêt à collaborer ?</h2>
+            <p>
+              Contactez-moi pour discuter de votre projet et <br />
+              immortaliser vos plus beaux moments.
+            </p>
+          </div>
+          <div class="part-2">
+            <p>Email : john@photography.com</p>
+            <p>Téléphone : 123-456-7890</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="section">
+      <div class="container">
+        <p>© 2024 John Doe Photography</p>
+      </div>
+    </footer>
+  </body>
+</html>

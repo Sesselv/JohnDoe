@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--soft-white);
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 0;
+}
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(1, 17, 35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+.progress-container {
+  width: 60%;
+  max-width: 20rem;
+  height: 0.5rem;
+  background-color: rgb(44, 44, 44);
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: var(--color-primary);
+  border-radius: 0.3rem;
+  transition: width 0.2s linear;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 15rem;
+}
+
+section,
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7rem;
+  padding: 0 1.5rem;
+  width: 100%;
+
+  > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+    width: 100%;
+    margin: 0;
+
+    &.l-small {
+      max-width: 56rem;
+    }
+
+    &.l-medium {
+      max-width: 64rem;
+    }
+
+    &.l-large {
+      max-width: 75rem;
+    }
+  }
+
+  h2 {
+    color: var(--color-primary);
+    font-size: 2.2rem;
+    font-weight: 800;
+  }
+}

@@ -1,0 +1,26 @@
+.sec-services {
+  .container {
+    h2 {
+      font-size: 4rem;
+    }
+    p {
+      font-size: 1.5rem;
+      padding-bottom: 5rem;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      gap: 4rem;
+
+      @media screen and (max-width: 900px) {
+        flex-direction: column;
+      }
+    }
+    li {
+      img {
+        width: 5rem;
+      }
+    }
+  }
+}

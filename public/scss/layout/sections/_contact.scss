@@ -1,0 +1,60 @@
+.sec-contact {
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--light-bg);
+    padding: 8rem;
+    color: var(--soft-white);
+    gap: 10rem;
+
+    .part-1 {
+      text-align: left;
+
+      h2 {
+        font-size: clamp(1.8rem, 4vw, 3rem);
+        text-align: left;
+      }
+
+      p {
+        padding-top: 5rem;
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
+        text-align: left;
+      }
+    }
+
+    .part-2 {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      font-weight: 700;
+      font-size: clamp(1rem, 2vw, 1.5rem);
+      text-align: center;
+    }
+
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+      gap: 4rem;
+
+      .part-1,
+      .part-2 {
+        text-align: center;
+      }
+
+      .part-1 {
+        h2 {
+          font-size: clamp(1.5rem, 5vw, 2.5rem);
+          text-align: center;
+        }
+        p {
+          font-size: clamp(0.9rem, 4vw, 1.3rem);
+          text-align: center;
+        }
+      }
+
+      .part-2 {
+        font-size: clamp(0.9rem, 4vw, 1.3rem);
+      }
+    }
+  }
+}
